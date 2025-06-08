@@ -26,12 +26,15 @@ const TabsComponent = () => {
         }}
       >
         {tabs.map((tab, idx) => (
-          <button
+          <motion.button
+            initial={{ width: 60 }}
+            animate={{ width: "auto" }}
             key={tab.label}
             onClick={() => setActiveTab(idx)}
             style={{
+              // padding: "1rem 1.5rem",
               flex: 1,
-              padding: "1rem 0",
+              padding: "1rem 0 ",
               background: "none",
               border: "none",
               fontWeight: activeTab === idx ? 700 : 500,
@@ -109,7 +112,7 @@ const TabsComponent = () => {
                 transition={{ type: "spring", stiffness: 500, damping: 30 }}
               />
             )}
-          </button>
+          </motion.button>
         ))}
       </div>
       <div style={{ minHeight: 80, padding: "2rem 1rem" }}>
