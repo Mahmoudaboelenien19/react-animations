@@ -1,11 +1,13 @@
+import { useParams, useViewTransitionState } from "react-router-dom";
+import Paragraph from "../../components/Paragraph";
+
 const ViewTransition = () => {
-  return (
-    <div>
-      <p style={{ viewTransitionName: "test-view-transition" }}>
-        test view transition
-      </p>
-    </div>
-  );
+  const { id } = useParams();
+  const href = `/transition/` + id;
+  const isTransitioning = useViewTransitionState(href);
+  console.log({ isTransitioning });
+
+  return <Paragraph />;
 };
 
 export default ViewTransition;

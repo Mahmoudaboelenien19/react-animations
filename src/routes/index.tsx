@@ -4,7 +4,7 @@ import TabsComponent from "../pages/tabs-component";
 import Loading from "../components/loading";
 import Login from "../pages/login";
 import About from "../pages/about";
-import ViewTransition from "../pages/view-transition";
+import Transition from "../pages/view-transition";
 
 export const AppRoutes = () => {
   return (
@@ -14,7 +14,7 @@ export const AppRoutes = () => {
       <Route path="loading" element={<Loading />} />
       <Route path="login" element={<Login />} />
       <Route path="about" element={<About />} />
-      <Route path="transition" element={<ViewTransition />} />
+      <Route path="transition/:id" element={<Transition />} />
     </Routes>
   );
 };

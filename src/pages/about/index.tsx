@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Paragraph from "../../components/Paragraph";
 
 const About = () => {
   const navigate = useNavigate();
@@ -13,23 +14,10 @@ const About = () => {
       <br />
       <br />
       <br />
-      <p
-        style={{
-          viewTransitionName: "test-view-transition",
-          position: "fixed",
-          top: 500,
-          right: 500,
-        }}
-      >
-        test view transition
-      </p>
-      <button
-        onClick={() => {
-          navigate("/transition", { viewTransition: true });
-        }}
-      >
+      <Link to="/transition/1" viewTransition>
         go to{" "}
-      </button>
+      </Link>
+      <Paragraph />
     </>
   );
 };

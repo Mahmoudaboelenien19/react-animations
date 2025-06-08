@@ -4,10 +4,10 @@ import Sidebar from "../sidebar";
 import { FaSmile } from "react-icons/fa";
 
 const navLinks = [
-  { to: "/", label: "Home", icon: <FaSmile /> },
-  { to: "/tabs", label: "Tabs" },
-  { to: "/loading", label: "loading" },
-  { to: "/login", label: "Login" },
+  //   { to: "/", label: "Home", icon: <FaSmile /> },
+  //   { to: "/tabs", label: "Tabs" },
+  //   { to: "/loading", label: "loading" },
+  //   { to: "/login", label: "Login" },
   { to: "/about", label: "about" },
   { to: "/transition", label: "view transition" },
 ];
