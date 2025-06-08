@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Paragraph from "../../components/Paragraph";
 
 const About = () => {
-  const navigate = useNavigate();
   return (
     <>
       <br />
