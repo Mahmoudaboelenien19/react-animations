@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home";
 import TabsComponent from "../pages/tabs-component";
-import App from "../App";
 import Loading from "../components/loading";
 import Login from "../pages/login";
 import About from "../pages/about";

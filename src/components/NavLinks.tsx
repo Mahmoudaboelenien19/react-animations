@@ -1,4 +1,4 @@
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FadeElement from "../animation/Fade";
