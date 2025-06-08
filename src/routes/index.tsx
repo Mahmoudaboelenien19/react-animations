@@ -1,0 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "../pages/home";
+import TabsComponent from "../pages/tabs-component";
+import App from "../App";
+import Loading from "../components/loading";
+import Login from "../pages/login";
+import About from "../pages/about";
+import ViewTransition from "../pages/view-transition";
+
+export const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="tabs" element={<TabsComponent />} />
+      <Route path="loading" element={<Loading />} />
+      <Route path="login" element={<Login />} />
+      <Route path="about" element={<About />} />
+      <Route path="transition" element={<ViewTransition />} />
+    </Routes>
+  );
+};
